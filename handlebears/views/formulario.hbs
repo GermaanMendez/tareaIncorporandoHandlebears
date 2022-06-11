@@ -1,0 +1,12 @@
+{{!-- todo lo que esta en body en la otra es lo que voy a remplazar en esta--}}
+<h2>
+   Agregar productos
+</h2>
+
+{{!-- creo un if, en caso de que se cumpla y exista la lista en una etiqueta ul va a hacer un for y mostrar cada uno de la lista--}}
+<form action="/productos" method="post">
+    Nombre:<input type="text"  name="name">
+    Precio:<input type="number"  name="price">
+    <button type="submit" >Agregar</button>
+</form>
+    <a href="/productos">Ir a la lista</a>

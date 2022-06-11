@@ -1,0 +1,14 @@
+{{!-- todo lo que esta en body en la otra es lo que voy a remplazar en esta--}}
+<h2>
+    Lista de productos
+</h2>
+
+{{!-- creo un if, en caso de que se cumpla y exista la lista en una etiqueta ul va a hacer un for y mostrar cada uno de la lista--}}
+{{#if listExists}}
+    <ul>
+        {{#each products}}
+            <li>{{this.name}},${{this.price}}</li>
+        {{/each}}
+    </ul>
+    <a href="/">Ir al formulario</a>
+{{/if}}
